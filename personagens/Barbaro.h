@@ -1,3 +1,7 @@
+#ifndef BARBARO_H
+#define BARBARO_H
+
+
 #include "Protagonista.h"
 #include "Goblin.h"
 #include "CavaleiroNegro.h"
@@ -34,3 +38,5 @@ struct Barbaro : public Protagonista {
     };
 
 };
+
+#endif

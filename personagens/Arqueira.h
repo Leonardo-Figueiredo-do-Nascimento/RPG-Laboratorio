@@ -1,3 +1,7 @@
+#ifndef ARQUEIRA_H
+#define ARQUEIRA_H
+
+
 #include "Protagonista.h"
 #include "Goblin.h"
 #include "CavaleiroNegro.h"
@@ -38,3 +42,5 @@ struct Arqueira : public Protagonista {
     };
 
 };
+
+#endif

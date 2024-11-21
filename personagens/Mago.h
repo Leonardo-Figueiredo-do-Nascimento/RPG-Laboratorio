@@ -1,3 +1,7 @@
+#ifndef MAGO_H
+#define MAGO_H
+
+
 #include "Protagonista.h"
 #include "Goblin.h"
 #include "CavaleiroNegro.h"
@@ -31,4 +35,6 @@ struct Mago : public Protagonista{
     void contarHistoria(){
         std::cout<<"Um antigo mago de um reino a muito tempo esquecido, esse poderoso mago descobriu o elixir da vida eterna, o qual o faz não morrer de idade ou doenças, possibilitando que esse poderoso mago usufrua de sua vida para estudar e treinar suas magias, agora em busca de tesouros para suas proximas magias ele parte para uma aventura cheia de perigo e de inimigos que podem o matar"<<endl;
     }
-}
+};
+
+#endif
