@@ -1,4 +1,7 @@
 #include "Monstro.h"
+#include "Mago.h"
+#include "Barbaro.h"
+#include "Arqueira.h"
 #include "Protagonista.h"
 #include <iostream>
 
@@ -8,8 +11,18 @@ struct CavaleiroNegro : public Monstro{
 		danoAtq = 8;
 	}
 	
-	void ataqueDeEspada(){
+	void ataqueDeEspada(Barbaro b){
+		b.vida -= 8;
 		std::cout<<"Cavaleiro Negro atacou com espada causando 8 de dano"<<endl;
-		
+	}
+	
+	void ataqueDeEspada(Mago m){
+		m.vida -= 8;
+		std::cout<<"Cavaleiro Negro atacou com espada causando 8 de dano"<<endl;
+	}
+	
+	void ataqueDeEspada(Arqueira a){
+		a.vida -= 8;
+		std::cout<<"Cavaleiro Negro atacou com espada causando 8 de dano"<<endl;	
 	}
 }
