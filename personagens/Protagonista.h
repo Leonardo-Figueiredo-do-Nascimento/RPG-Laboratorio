@@ -1,3 +1,6 @@
+#ifndef PROTAGONISTA_H
+#define PROTAGONISTA_H
+
 #include <string>
 #include <iostream>
 
@@ -6,6 +9,7 @@ struct Protagonista {
     int vidaMax;
     int danoAtq;
     std::string classe;
+    int fase = 1;
 	int pocoesCura[3] = {1, 0, 0}; // Inicializa com 1 poção, se adicionar uma poção, o 0 vira 1
 
     void usarPocao() {
@@ -23,3 +27,5 @@ struct Protagonista {
         std::cout << "Voce nao tem mais pocoes de cura disponiveis!" << std::endl;
     }
 };
+
+#endif

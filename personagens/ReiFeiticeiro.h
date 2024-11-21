@@ -1,8 +1,10 @@
+#ifndef REIFEITICEIRO_H
+#define REIFEITICEIRO_H
+
 #include "Monstro.h"
 #include "Mago.h"
 #include "Barbaro.h"
 #include "Arqueira.h"
-#include "Protagonista.h"
 #include <iostream>
 
 struct ReiFeiticeiro : public Monstro{
@@ -11,18 +13,20 @@ struct ReiFeiticeiro : public Monstro{
 		danoAtq = 20;
 	}
 	
-	void ataqueDeMagiaNegra(Barbaro b){
+	void ataqueDeMagiaNegra(Barbaro& b){
 		b.vida -= 20;
 		std::cout<<"\nRei Feiticeiro atacou com magia negra causando 20 de dano"<<endl;
 	}
 	
-	void ataqueDeMagiaNegra(Mago m){
+	void ataqueDeMagiaNegra(Mago& m){
 		m.vida -= 20;
 		std::cout<<"\nRei Feiticeiro atacou com magia negra causando 20 de dano"<<endl;
 	}
 	
-	void ataqueDeMagiaNegra(Arqueira a){
+	void ataqueDeMagiaNegra(Arqueira& a){
 		a.vida -= 20;
 		std::cout<<"\nRei Feiticeiro atacou com magia negra causando 20 de dano"<<endl;
 	}
-}
+};
+
+#endif
