@@ -1,0 +1,27 @@
+#include "Protagonista.h"
+#include <string>
+#include <iostream>
+
+struct Arqueira : public Protagonista {
+    Arqueira (){
+    vida = 100;            // Vida inicial
+        vidaMax = 70;         // Vida máxima
+        danoAtq = 25;          // Dano de ataque
+        classe = "Arqueira ";  // Nome da classe
+        pocoesCura[0] = 1; // Poção disponível
+        pocoesCura[1] = 0; // Poção indisponível
+        pocoesCura[2] = 0; // Poção indisponível
+    }
+
+    void ataqueDeFlecha(){
+            std::cout<<"seu ataque causou 25 de dano\n";
+        };
+
+        void contarHistoria(){
+            std::cout<<"Conhecida como a arqueira seu nome verdadeiro é Blue. Veio de uma aldeia no reino selvagem.  
+Sua família era pobre seu sustento era inteiramente da caça. Seu pai a ensinou a usar o arco e flechas para caçar e quando seu pai morreu Blue teve que assumir o papel de irmã mais velha e sustentar a família. Depois de alguns anos caçando e vendendo suas presas ela ficou conhecida com a arqueira que nunca erra entra as pessoas de sua aldeia.
+Em um dia de caça ela retornou para a aldeia, mas tudo estava destruído e todos estavam mortos. Quando chegou em casa encontrou sua família morta. Depois disso ela jurou vingança contra o exército das travas, com o tempo foi aprimorando suas habilidades e adquirindo novas.
+\n";
+        };
+
+};
