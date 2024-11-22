@@ -1,5 +1,15 @@
 #include <iostream>
 #include "menu/menu.h"
+#include "personagens/Arqueira.h"
+#include "personagens/Barbaro.h"
+#include "personagens/Mago.h"
+#include "personagens/Goblin.h"
+#include "personagens/CavaleiroNegro.h"
+#include "personagens/ReiFeiticeiro.h"
+#include "fases/Caverna.h"
+#include "fases/Floresta.h"
+#include "fases/Castelo.h"
+#include "fases/PalacioReal.h"
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
@@ -22,13 +32,16 @@ int main(int argc, char** argv) {
 		    	std::cin >> personagem;
 		        
 		        if(personagem == 1){
-		        	
+		        	Barbaro b1;
+		        	b1.contarHistoria();
 				}
 				else if(personagem == 2){
-					
+					Arqueira a1;
+					a1.contarHistoria();
 				}
 				else if(personagem == 3){
-				
+					Mago m1;
+					m1.contarHistoria();
 				}
 				else{
 					std::cout << "\nOpcao invalida"<<std::endl;
