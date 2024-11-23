@@ -3,9 +3,6 @@
 
 
 #include "Protagonista.h"
-#include "Goblin.h"
-#include "CavaleiroNegro.h"
-#include "ReiFeiticeiro.h"
 #include <string>
 #include <iostream>
 
@@ -18,19 +15,6 @@ struct Barbaro : public Protagonista {
         pocoesCura[0] = 1; // Poção disponível
         pocoesCura[1] = 0; // Poção indisponível
         pocoesCura[2] = 0; // Poção indisponível
-    }
-
-    void ataqueDeClava(Goblin g){
-    	g.vida -= 20;
-        std::cout<<"seu ataque causou 20 de dano\n";
-    };
-    void ataqueDeClava(CavaleiroNegro c){
-    	c.vida -= 20;
-        std::cout<<"seu ataque causou 20 de dano\n";
-    };
-    void ataqueDeClava(ReiFeiticeiro r){
-    	r.vida -= 20;
-        std::cout<<"seu ataque causou 20 de dano"<<endl;
     }
 
     void contarHistoria(){

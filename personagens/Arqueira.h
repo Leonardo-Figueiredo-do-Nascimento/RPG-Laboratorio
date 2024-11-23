@@ -1,11 +1,7 @@
 #ifndef ARQUEIRA_H
 #define ARQUEIRA_H
 
-
 #include "Protagonista.h"
-#include "Goblin.h"
-#include "CavaleiroNegro.h"
-#include "ReiFeiticeiro.h"
 #include <string>
 #include <iostream>
 
@@ -18,20 +14,6 @@ struct Arqueira : public Protagonista {
         pocoesCura[0] = 1; // Poção disponível
         pocoesCura[1] = 1; // Poção indisponível
         pocoesCura[2] = 0; // Poção indisponível
-    }
-
-    void ataqueDeFlecha(Goblin g){
-    	g.vida -= 25;
-        std::cout<<"\nSeu ataque causou 25 de dano\n";
-    };
-    void ataqueDeFlecha(CavaleiroNegro c){
-    	c.vida -= 25;	
-        std::cout<<"\nSeu ataque causou 25 de dano\n";
-    };
-
-	void ataqueDeFlecha(ReiFeiticeiro r){
-    	r.vida -= 25;
-        std::cout<<"\nSeu ataque causou 25 de dano\n";
     }
 
     void contarHistoria(){
