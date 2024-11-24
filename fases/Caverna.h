@@ -23,6 +23,7 @@ bool Caverna(Protagonista& prota) {
 		int jogada;
 		cout<< "\nVida: "<<prota.vida<<"          Pocoes de cura:"<<prota.getNumeroPocoes()<<endl;
 		cout<< "[1] Atacar     [2]Curar"<<endl;
+		cout<<"->";
 		cin>>jogada;
 		
 		if(jogada==1){
@@ -30,7 +31,7 @@ bool Caverna(Protagonista& prota) {
             int dano = prota.danoAtq;     
             alvo.vida -= dano;
 
-            cout << "Voce causou " << dano << " de dano ao primeiro Goblin!" << endl;
+            cout << "\nVoce causou " << dano << " de dano ao primeiro Goblin!" << endl;
 
             // Verifica se o Goblin foi derrotado
             if (alvo.vida <= 0) {

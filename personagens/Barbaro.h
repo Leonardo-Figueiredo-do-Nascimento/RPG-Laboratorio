@@ -18,7 +18,7 @@ struct Barbaro : public Protagonista {
     }
 
     void contarHistoria(){
-        std::cout<<"Ragnar, um bárbaro das terras do Norte, teve um sonho enigmático sobre o Olho de Skarn, um artefato lendário que controlava o destino das terras selvagens. Determinado, ele enfrentou perigos mortais — feras, trolls e frio implacável — até chegar ao templo onde o artefato estava guardado. Lá, superou o enigma de uma esfinge e enfrentou o espírito de um antigo guerreiro em combate. No momento decisivo, Ragnar provou sua honra ao abdicar da violência, demonstrando que sua busca era pelo bem de seu povo. Ele conquistou o Olho de Skarn e retornou como líder, trazendo prosperidade e deixando um legado de coragem e sabedoria.\n";
+        std::cout<<"\nRagnar, um barbaro das terras do Norte, teve um sonho enigmatico sobre o Olho de Skarn, um artefato lendario que controlava o destino das terras selvagens. Determinado, ele enfrentou perigos mortais — feras, trolls e frio implacavel — ate chegar ao templo onde o artefato estava guardado. La, superou o enigma de uma esfinge e enfrentou o espirito de um antigo guerreiro em combate. No momento decisivo, Ragnar provou sua honra ao abdicar da violencia, demonstrando que sua busca era pelo bem de seu povo. Ele conquistou o Olho de Skarn e retornou como lider, trazendo prosperidade e deixando um legado de coragem e sabedoria.\n";
     };
 
 };

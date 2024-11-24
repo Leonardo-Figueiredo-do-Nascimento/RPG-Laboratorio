@@ -19,7 +19,11 @@ int main(int argc, char** argv) {
 	int opcao = Menu();
 	
 	while(opcao != 1 || opcao != 2 || opcao != 3){
+	
 		if (opcao == 1) {
+			
+			std::cout<<"\nHa muito tempo atras um reino vivia em paz, ate ser invadido pelo exercito das trevas do Rei Feiticeiro."<<std::endl;
+			std::cout<<"Agora cabe a voce trazer a paz de volta ao reino, comece sua jornada para derrotar o Rei Feiticeiro."<<std::endl;
 			
 			int personagem;
 			
@@ -27,8 +31,8 @@ int main(int argc, char** argv) {
 				
 				std::cout << "\nEscolha um personagem:" << std::endl;
 		        std::cout << "\n[1] Barbaro     Vida: 100    Ataque: 20     Pocoes de cura: 1" << std::endl;
-		        std::cout << "[2] Arqueira    Vida: 70     Ataque: 25     Pocoes de cura: 2" << std::endl;
-		        std::cout << "[3] Mago        Vida: 50     Ataque: 25     Pocoes de cura: 3" << std::endl;
+		        std::cout << "[2] Arqueira    Vida: 70     Ataque: 22     Pocoes de cura: 2" << std::endl;
+		        std::cout << "[3] Mago        Vida: 50     Ataque: 30     Pocoes de cura: 3" << std::endl;
 		        
 				std::cout << "\n-> ";
 		    	std::cin >> personagem;
@@ -75,6 +79,7 @@ int main(int argc, char** argv) {
 				    			arquivo.close();
 				    			
 								bool bossFight = PalacioReal(b1);
+								exit(0);
 							}
 						}
 					}
@@ -117,6 +122,7 @@ int main(int argc, char** argv) {
 						    	arquivo << "vida: " << a1.vida << std::endl;
 								arquivo.close();
 								bool bossFight = PalacioReal(a1);
+								exit(0);
 							}
 						}
 					}
@@ -160,6 +166,7 @@ int main(int argc, char** argv) {
 						    	arquivo << "vida: " << m1.vida << std::endl;
 								arquivo.close();
 								bool bossFight = PalacioReal(m1);
+								exit(0);
 							}
 						}
 					}
@@ -198,12 +205,7 @@ int main(int argc, char** argv) {
 		    }
 		
 		    // Fechando o arquivo
-		    dados.close();
-		
-		    // Exibindo os valores lidos
-		    std::cout << "Fase: " << fase << std::endl;
-		    std::cout << "Vida: " << vida << std::endl;
-		    std::cout << "Classe: " << classe << std::endl;
+		    //dados.close();
 		
 			if(classe=="Barbaro"){
 				Barbaro b1;
@@ -239,6 +241,7 @@ int main(int argc, char** argv) {
 				    			arquivo.close();
 				    			
 								bool bossFight = PalacioReal(b1);
+								exit(0);
 							}
 						}
 					}
@@ -266,6 +269,7 @@ int main(int argc, char** argv) {
 			    			arquivo.close();
 			    			
 							bool bossFight = PalacioReal(b1);
+							exit(0);
 						}
 					}
 				} else if(fase==3){
@@ -282,11 +286,14 @@ int main(int argc, char** argv) {
 		    			arquivo.close();
 		    			
 						bool bossFight = PalacioReal(b1);
+						exit(0);
+						
 					}
 				} else if(fase==4){
 					b1.vida = vida;
 					b1.fase = fase;
 					bool bossFight = PalacioReal(b1);
+					exit(0);
 				}
 			}
 			
@@ -325,6 +332,7 @@ int main(int argc, char** argv) {
 				    			arquivo.close();
 				    			
 								bool bossFight = PalacioReal(a1);
+								exit(0);
 							}
 						}
 					}
@@ -352,6 +360,7 @@ int main(int argc, char** argv) {
 			    			arquivo.close();
 			    			
 							bool bossFight = PalacioReal(a1);
+							exit(0);
 						}
 					}
 				} else if(fase==3){
@@ -368,11 +377,13 @@ int main(int argc, char** argv) {
 		    			arquivo.close();
 		    			
 						bool bossFight = PalacioReal(a1);
+						exit(0);
 					}
 				} else if(fase==4){
 					a1.vida = vida;
 					a1.fase = fase;
 					bool bossFight = PalacioReal(a1);
+					exit(0);
 				}
 			}
 			
@@ -410,6 +421,7 @@ int main(int argc, char** argv) {
 				    			arquivo.close();
 				    			
 								bool bossFight = PalacioReal(m1);
+								exit(0);
 							}
 						}
 					}
@@ -437,6 +449,7 @@ int main(int argc, char** argv) {
 			    			arquivo.close();
 			    			
 							bool bossFight = PalacioReal(m1);
+							exit(0);
 						}
 					}
 				} else if(fase==3){
@@ -453,11 +466,13 @@ int main(int argc, char** argv) {
 		    			arquivo.close();
 		    			
 						bool bossFight = PalacioReal(m1);
+						exit(0);
 					}
 				} else if(fase==4){
 					m1.vida = vida;
 					m1.fase = fase;
 					bool bossFight = PalacioReal(m1);
+					exit(0);
 				}
 			}
     	}

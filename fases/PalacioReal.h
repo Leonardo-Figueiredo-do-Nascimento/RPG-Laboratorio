@@ -15,19 +15,20 @@ bool PalacioReal(Protagonista& prota) {
     
     while (r.vida>0) {
 		int jogada;
-		cout<< "Vida: "<<prota.vida<<"          Pocoes de cura:"<<prota.getNumeroPocoes()<<endl;
+		cout<< "\nVida: "<<prota.vida<<"          Pocoes de cura:"<<prota.getNumeroPocoes()<<endl;
 		cout<< "[1] Atacar     [2]Curar"<<endl;
+		cout<<"->";
 		cin>>jogada;
 		
 		if(jogada==1){ 
             int dano = prota.danoAtq;     
             r.vida -= dano;
 
-            cout << "Voce causou " << dano << " de dano ao Rei Feiticeiro!" << endl;
-            cout << "Vida restante do Rei Feiticeiro: " << r.vida <<endl;
+            cout << "\nVoce causou " << dano << " de dano ao Rei Feiticeiro!" << endl;
+            cout << "\n=========Vida restante do Rei Feiticeiro: " << r.vida <<"========="<<endl;
 
             if (r.vida <= 0) {
-                cout << "O Rei Feiticeiro foi derrotado!" << endl;
+                cout << "\nO Rei Feiticeiro foi derrotado!" << endl;
                 break;
             }
 		}else if(jogada==2){

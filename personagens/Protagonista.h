@@ -16,16 +16,16 @@ struct Protagonista {
         // Loop para verificar alguma poção disponível
         for (int i = 0; i < 3; i++) {
             if (pocoesCura[i] == 1) { // Tem uma poção?
-                vida += 25; // Cura 
+                vida += 40; // Cura 
                 if (vida > vidaMax) {
                     vida = vidaMax; // Não ultrapassa a vida máxima
                 }
                 pocoesCura[i] = 0; // Atualiza a bolsa poções 
-                std::cout << "Voce usou uma pocao de cura! Vida atual: " << vida << std::endl;
+                std::cout << "\nVoce usou uma pocao de cura! Vida atual: " << vida << std::endl;
                 return;
             }
         }
-        std::cout << "Voce nao tem mais pocoes de cura disponiveis!" << std::endl;
+        std::cout << "\nVoce nao tem mais pocoes de cura disponiveis!" << std::endl;
     }
     
     int getNumeroPocoes(){

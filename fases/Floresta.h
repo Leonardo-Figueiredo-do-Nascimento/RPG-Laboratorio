@@ -25,6 +25,7 @@ bool Floresta(Protagonista& prota) {
         int jogada;
         cout << "\nVida: " << prota.vida << "          Pocoes de cura:" << prota.getNumeroPocoes() << endl;
         cout << "[1] Atacar     [2] Curar" << endl;
+        cout<<"->";
         cin >> jogada;
 
         if (jogada == 1) {
@@ -34,7 +35,7 @@ bool Floresta(Protagonista& prota) {
                 int dano = prota.danoAtq;
                 alvo.vida -= dano;
 
-                cout << "Voce causou " << dano << " de dano ao primeiro Goblin!" << endl;
+                cout << "\nVoce causou " << dano << " de dano ao primeiro Goblin!" << endl;
 
                 if (alvo.vida <= 0) {
                     cout << "Goblin foi derrotado!" << endl;
@@ -47,7 +48,7 @@ bool Floresta(Protagonista& prota) {
                 int dano = prota.danoAtq;
                 alvo.vida -= dano;
 
-                cout << "Voce causou " << dano << " de dano ao Cavaleiro Negro!" << endl;
+                cout << "\nVoce causou " << dano << " de dano ao Cavaleiro Negro!" << endl;
 
                 if (alvo.vida <= 0) {
                     cout << "Cavaleiro Negro foi derrotado!" << endl;
