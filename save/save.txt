@@ -1,3 +1,0 @@
-fase: 1
-classe: Mago
-vida: 50
