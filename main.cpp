@@ -34,14 +34,57 @@ int main(int argc, char** argv) {
 		        if(personagem == 1){
 		        	Barbaro b1;
 		        	b1.contarHistoria();
+		        	
+		        	bool vitoria1 = Caverna(b1);
+		        	
+		        	if(vitoria1){
+						bool vitoria2 = Floresta(b1);
+						
+						if(vitoria2){
+							bool vitoria3 = Castelo(b1);
+							
+							if(vitoria3){
+								bool bossFight = PalacioReal(b1);
+							}
+						}
+					}
 				}
 				else if(personagem == 2){
 					Arqueira a1;
 					a1.contarHistoria();
+					
+					bool vitoria1 = Caverna(a1);
+					
+					if(vitoria1){
+						bool vitoria2 = Floresta(a1);
+						
+						if(vitoria2){
+							bool vitoria3 = Castelo(a1);
+							
+							if(vitoria3){
+								bool bossFight = PalacioReal(a1);
+							}
+						}
+					}
 				}
+					
 				else if(personagem == 3){
 					Mago m1;
 					m1.contarHistoria();
+					
+					bool vitoria1 = Caverna(m1);
+					
+					if(vitoria1){
+						bool vitoria2 = Floresta(m1);
+						
+						if(vitoria2){
+							bool vitoria3 = Castelo(m1);
+							
+							if(vitoria3){
+								bool bossFight = PalacioReal(m1);
+							}
+						}
+					}
 				}
 				else{
 					std::cout << "\nOpcao invalida"<<std::endl;

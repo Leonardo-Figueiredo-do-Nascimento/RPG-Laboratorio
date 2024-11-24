@@ -7,7 +7,7 @@
 
 struct Arqueira : public Protagonista {
     Arqueira (){
-    vida = 100;            // Vida inicial
+    	vida = 70;            // Vida inicial
         vidaMax = 70;         // Vida máxima
         danoAtq = 25;          // Dano de ataque
         classe = "Arqueira ";  // Nome da classe
