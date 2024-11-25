@@ -241,6 +241,7 @@ int main(int argc, char** argv) {
 				    			arquivo.close();
 				    			
 								bool bossFight = PalacioReal(b1);
+								std::cin.get(); 
 								exit(0);
 							}
 						}
@@ -269,6 +270,7 @@ int main(int argc, char** argv) {
 			    			arquivo.close();
 			    			
 							bool bossFight = PalacioReal(b1);
+							std::cin.get(); 
 							exit(0);
 						}
 					}
@@ -286,13 +288,14 @@ int main(int argc, char** argv) {
 		    			arquivo.close();
 		    			
 						bool bossFight = PalacioReal(b1);
-						exit(0);
-						
+						std::cin.get(); 
+						exit(0);	
 					}
 				} else if(fase==4){
 					b1.vida = vida;
 					b1.fase = fase;
 					bool bossFight = PalacioReal(b1);
+				    std::cin.get(); 
 					exit(0);
 				}
 			}
@@ -332,6 +335,7 @@ int main(int argc, char** argv) {
 				    			arquivo.close();
 				    			
 								bool bossFight = PalacioReal(a1);
+								std::cin.get(); 
 								exit(0);
 							}
 						}
@@ -360,6 +364,7 @@ int main(int argc, char** argv) {
 			    			arquivo.close();
 			    			
 							bool bossFight = PalacioReal(a1);
+							std::cin.get(); 
 							exit(0);
 						}
 					}
@@ -377,12 +382,14 @@ int main(int argc, char** argv) {
 		    			arquivo.close();
 		    			
 						bool bossFight = PalacioReal(a1);
+						std::cin.get(); 
 						exit(0);
 					}
 				} else if(fase==4){
 					a1.vida = vida;
 					a1.fase = fase;
 					bool bossFight = PalacioReal(a1);
+				    std::cin.get(); 
 					exit(0);
 				}
 			}
@@ -421,6 +428,7 @@ int main(int argc, char** argv) {
 				    			arquivo.close();
 				    			
 								bool bossFight = PalacioReal(m1);
+								std::cin.get(); 
 								exit(0);
 							}
 						}
@@ -449,6 +457,7 @@ int main(int argc, char** argv) {
 			    			arquivo.close();
 			    			
 							bool bossFight = PalacioReal(m1);
+							std::cin.get(); 
 							exit(0);
 						}
 					}
@@ -466,12 +475,14 @@ int main(int argc, char** argv) {
 		    			arquivo.close();
 		    			
 						bool bossFight = PalacioReal(m1);
+						std::cin.get(); 
 						exit(0);
 					}
 				} else if(fase==4){
 					m1.vida = vida;
 					m1.fase = fase;
 					bool bossFight = PalacioReal(m1);
+					std::cin.get(); 
 					exit(0);
 				}
 			}
